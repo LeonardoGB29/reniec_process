@@ -1,0 +1,25 @@
+# python
+__pycache__/
+*.py[cod]
+*.pyd
+*.so
+
+# virtual env
+env/
+venv/
+.venv/
+.env
+
+# editor / IDE configs 
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# database & uploads 
+instance/
+*.sqlite3
+*.db
+
+migrations/**/versions/*.pyc
