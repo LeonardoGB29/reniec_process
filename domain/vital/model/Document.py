@@ -1,7 +1,13 @@
-#!/usr/bin/python
-#-*- coding: utf-8 -*-
+from extensions import db
+from datetime import datetime
 
-class Document:
+class Document(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    doc_type = db.Column(db.String(30), nullable=False)
+    issued_at = db.Column(db.DateTime, default=datetime.utcnow)
+    status = db.Column(db.String(20), default="PENDING")
+    case_id = db.Column(db.Integer, nullable=True)
+
     def __init__(self):
         self.id_acta = None
         self.doc_type = None
