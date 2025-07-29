@@ -54,7 +54,7 @@ def list_by_document(doc_id):
 @observation_bp.route('/associate_observation_to_document', methods=['PUT'])
 def associate_to_document():
     data = request.get_json()
-    obs_id = data.get("obs_id")
+    obs_id = data.get("observation_id")
     document_id = data.get("document_id")
     obs = ObservationService.associate_observation_to_document(obs_id, document_id)
     if obs is None:
