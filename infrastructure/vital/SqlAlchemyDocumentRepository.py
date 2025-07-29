@@ -1,10 +1,9 @@
 #!/usr/bin/python
 #-*- coding: utf-8 -*-
 
-from DocumentRepository import DocumentRepository
-from DocumentRepository import DocumentRepository
+from domain.vital.DocumentRepository import DocumentRepository
 
-class SqlAlchemyDocumentRepository(DocumentRepository, DocumentRepository):
+class SqlAlchemyDocumentRepository(): #(DocumentRepository):
     def __init__(self):
         pass
 

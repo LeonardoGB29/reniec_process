@@ -1,6 +1,6 @@
 from flask import Flask
 from extensions import db, migrate
-from controllers.document_controller import document_bp
+#from controllers.document_controller import document_bp
 
 import os
 from dotenv import load_dotenv
@@ -16,8 +16,8 @@ app.config["SECRET_KEY"] = os.getenv("SECRET_KEY", "123456")
 db.init_app(app)
 migrate.init_app(app, db)
 
-from .presentation.vital.document_controller import document_bp
-from .presentation.vital.ObservationController import observation_bp
+from presentation.vital.document_controller import document_bp
+from presentation.vital.ObservationController import observation_bp
 app.register_blueprint(document_bp, url_prefix="/register_vital")
 app.register_blueprint(observation_bp, url_prefix="/register_vital")
 

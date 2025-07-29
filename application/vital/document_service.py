@@ -1,4 +1,4 @@
-from ...domain.vital.model.document import Document
+from domain.vital.model.Document import Document
 from extensions import db
 
 class DocumentService:
