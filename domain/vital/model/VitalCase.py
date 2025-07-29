@@ -1,12 +1,11 @@
-#!/usr/bin/python
-#-*- coding: utf-8 -*-
+﻿from extensions import db
 
-class VitalCase:
-    def __init__(self):
-        self.id_case = None
-        self.created_at = None
-        self.documents = None
+class VitalCase(db.Model):
+    __tablename__ = 'vital_cases'
 
-    def add_document(self, doc):
-        pass
+    id = db.Column(db.Integer, primary_key=True)
+    person_id = db.Column(db.Integer, nullable=False)
+    status = db.Column(db.String(50), default='PENDING')  # Otros: RESOLVED, CANCELED
 
+    def __repr__(self):
+        return f"<VitalCase {self.id} - person_id={self.person_id} - status={self.status}>"

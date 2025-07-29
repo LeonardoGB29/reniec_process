@@ -1,16 +1,19 @@
-#!/usr/bin/python
-#-*- coding: utf-8 -*-
+﻿from domain.vital.model.VitalCase import VitalCase
+from infrastructure.vital.SqlAlchemyVitalCaseRepository import SqlAlchemyVitalCaseRepository
 
 class VitalCaseService:
     def __init__(self):
-        self.repo = None
+        self.repo = SqlAlchemyVitalCaseRepository()
 
-    def create(self, doc_id):
-        pass
+    def create_case(self, data):
+        case = VitalCase(person_id=data["person_id"])
+        return self.repo.add(case)
 
-    def list(self, ):
-        pass
+    def get_case(self, case_id):
+        return self.repo.get_by_id(case_id)
 
-    def add_document(self, case_id, doc):
-        pass
+    def list_cases(self):
+        return self.repo.list_all()
 
+    def update_status(self, case_id, new_status):
+        return self.repo.update_status(case_id, new_status)
