@@ -1,6 +1,6 @@
 from flask import Flask
 from extensions import db, migrate
-from controllers.document_controller import document_bp
+#from controllers.document_controller import document_bp
 import os
 from dotenv import load_dotenv
 
