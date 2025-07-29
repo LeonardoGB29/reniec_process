@@ -7,7 +7,6 @@ class RequestServiceImpl:
 
     def send(self, req):
         raise NotImplementedError("El método 'send' aún no está implementado.")
-        pass
 
     def status(self, id):
         # Método intencionalmente vacío. No se requiere lógica por ahora.
