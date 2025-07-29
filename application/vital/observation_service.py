@@ -1,6 +1,6 @@
 from flask import Blueprint, request, jsonify
 from extensions import db
-from domain.vital.model.VitalObservation import VitalObservation
+from domain.vital.model.vital_observation import VitalObservation
 
 class ObservationService:
 

@@ -1,6 +1,6 @@
 from flask import Blueprint, request, jsonify
 from application.vital.document_service import DocumentService
-from infrastructure.vital.SqlAlchemyDocumentRepository import SqlAlchemyDocumentRepository
+from infrastructure.vital.sqlalchemy_document_repository import SqlAlchemyDocumentRepository
 
 document_bp = Blueprint("register_vital", __name__)
 service = DocumentService(SqlAlchemyDocumentRepository())

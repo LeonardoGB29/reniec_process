@@ -1,5 +1,5 @@
 from flask import Blueprint, request, jsonify
-from application.vital.ObservationService import ObservationService
+from application.vital.observation_service import ObservationService
 
 
 observation_bp = Blueprint('vital_observation', __name__, url_prefix='/register_vital')

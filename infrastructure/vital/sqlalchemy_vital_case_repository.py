@@ -1,4 +1,4 @@
-﻿from domain.vital.model.VitalCase import VitalCase
+﻿from domain.vital.model.vital_case import VitalCase
 from extensions import db
 
 class SqlAlchemyVitalCaseRepository:

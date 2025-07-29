@@ -3,7 +3,7 @@
 
 
 from flask import Blueprint, request, jsonify
-from application.vital.VitalCaseService import VitalCaseService
+from application.vital.vital_case_service import VitalCaseService
 
 vital_case_bp = Blueprint("vital_case_bp", __name__)
 service = VitalCaseService()
