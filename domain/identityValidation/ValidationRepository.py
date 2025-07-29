@@ -3,5 +3,5 @@
 
 class ValidationRepository:
     def __init__(self):
-        self.Attribute1 = None
+        self.attribute1 = None
 

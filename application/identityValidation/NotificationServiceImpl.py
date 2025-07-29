@@ -5,10 +5,10 @@ class NotificationServiceImpl:
     def __init__(self):
         self.repo = None
 
-    def notifyObservation(self, id, obs):
+    def notify_observation(self, id, obs):
         # Método intencionalmente vacío. No se requiere lógica por ahora.
         pass
 
-    def notifyResult(self, id, status):
+    def notify_result(self, id, status):
         raise NotImplementedError("El método 'notifyResult' aún no está implementado.")
 

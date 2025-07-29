@@ -3,13 +3,13 @@
 
 class ValidationService:
     def __init__(self):
-        self.validationRepository = None
-        self.Attribute1 = None
+        self.validation_repository = None
+        self.attribute1 = None
 
-    def validateRequest(self, request):
+    def validate_request(self, request):
         # Método intencionalmente vacío. No se requiere lógica por ahora.
         pass
 
-    def logValidation(self, validation):
+    def log_validation(self, validation):
         # Método intencionalmente vacío. No se requiere lógica por ahora.
         pass

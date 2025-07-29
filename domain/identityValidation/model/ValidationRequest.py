@@ -4,13 +4,13 @@
 class ValidationRequest:
     def __init__(self):
         self.dni = None
-        self.requestDate = None
+        self.request_date = None
 
-    def getDni(self, ):
+    def getn_dni(self, ):
         # Método intencionalmente vacío. No se requiere lógica por ahora.
         pass
 
-    def getRequestDate(self, ):
+    def get_request_date(self, ):
         # Método intencionalmente vacío. No se requiere lógica por ahora.
         pass
 

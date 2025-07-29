@@ -4,10 +4,10 @@
 class Observation:
     def __init__(self):
         self.text = None
-        self.createdAt = None
-        self.Port1 = None
+        self.created_at = None
+        self.port1 = None
 
-    def getText(self, ):
+    def get_text(self, ):
         # Método intencionalmente vacío. No se requiere lógica por ahora.
         pass
 

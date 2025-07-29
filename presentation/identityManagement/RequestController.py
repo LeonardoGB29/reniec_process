@@ -5,11 +5,11 @@ class RequestController:
     def __init__(self):
         self.service = None
 
-    def createRequest(self, req):
+    def create_request(self, req):
         # Método intencionalmente vacío. No se requiere lógica por ahora.
         pass
 
-    def getRequestDetails(self, id):
+    def get_request_details(self, id):
         # Método intencionalmente vacío. No se requiere lógica por ahora.
         pass
 

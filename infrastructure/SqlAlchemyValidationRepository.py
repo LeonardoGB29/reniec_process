@@ -12,11 +12,11 @@ class SqlAlchemyValidationRepository(ValidationRepository):
         # Implementación para guardar la validación en la base de datos
         pass
 
-    def findByRequestId(self, requestId):
+    def find_by_request_id(self, request_id):
         # Implementación para encontrar una validación por ID de solicitud
         pass
 
-    def findAllByPersonId(self, personId):
+    def find_all_by_person_id(self, person_id):
         # Implementación para encontrar todas las validaciones por ID de persona
         pass
 

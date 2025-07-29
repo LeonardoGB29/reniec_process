@@ -12,7 +12,7 @@ class BiometricRepository(BiometricoRepository):
         # Override intencionalmente vacío porque no aplica a este repositorio
         pass
 
-    def deleteByPersonId(self, personId):
+    def deleteByPersonId(self, person_id):
         # Método intencionalmente vacío. No se requiere lógica por ahora.
         pass
 

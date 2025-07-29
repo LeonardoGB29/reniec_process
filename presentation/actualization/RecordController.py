@@ -6,11 +6,11 @@ class RecordController:
         # Constructor intencionalmente vacío
         pass
 
-    def getRecordById(self, recordId):
+    def get_record_by_id(self, record_id):
         # Método intencionalmente vacío. No se requiere lógica por ahora.
         pass
 
-    def updateRecord(self, ):
+    def update_record(self, ):
         # Método intencionalmente vacío. No se requiere lógica por ahora.
         pass
 

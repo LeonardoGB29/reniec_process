@@ -7,11 +7,11 @@ class Record:
         self.personId: String = None
         self.comment = None
 
-    def isSuccessful(self, ):
+    def is_successful(self, ):
         # Método intencionalmente vacío. No se requiere lógica por ahora.
         pass
 
-    def getSummary(self, ):
+    def get_summary(self, ):
         # Método intencionalmente vacío. No se requiere lógica por ahora.
         pass
 

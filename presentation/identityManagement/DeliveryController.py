@@ -5,7 +5,7 @@ class DeliveryController:
     def __init__(self):
         self.service = None
 
-    def generateDocument(self, id):
+    def generate_document(self, id):
         # Método intencionalmente vacío. No se requiere lógica por ahora.
         pass
 

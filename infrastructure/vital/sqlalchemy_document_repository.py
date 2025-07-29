@@ -12,5 +12,5 @@ class SqlAlchemyDocumentRepository:
     def list_all(self) -> list[Document]:
         return Document.query.all()
 
-    def update(self, doc: Document):
+    def update(self):
         db.session.commit()

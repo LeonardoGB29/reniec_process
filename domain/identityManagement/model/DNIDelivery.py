@@ -3,8 +3,8 @@
 
 class DNIDelivery:
     def __init__(self):
-        self.deliveryRepository = None
-        self.Attribute1 = None
+        self.delivery_repository = None
+        self.attribute1 = None
 
     def deliver(self, doc):
         # Método intencionalmente vacío. No se requiere lógica por ahora.

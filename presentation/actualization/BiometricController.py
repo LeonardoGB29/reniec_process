@@ -6,7 +6,7 @@ class BiometricController:
         # Constructor intencionalmente vacío
         pass
 
-    def getBiometricByPerson(self, personId):
+    def get_biometric_by_person(self, person_id):
         # Método intencionalmente vacío. No se requiere lógica por ahora.
         pass
 

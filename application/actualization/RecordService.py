@@ -3,10 +3,10 @@
 
 class RecordService:
     def __init__(self):
-        self.expedienteRepository = None
-        self.Attribute2 = None
+        self.expediente_repository = None
+        self.attribute2 = None
 
-    def updateRecord(self, ):
+    def update_record(self):
         # Método intencionalmente vacío. No se requiere lógica por ahora.
         pass
 
