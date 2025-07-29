@@ -23,3 +23,5 @@ instance/
 *.db
 
 migrations/**/versions/*.pyc
+
+migrations
