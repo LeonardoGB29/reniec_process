@@ -1,5 +1,5 @@
 from extensions import db
-from domain.vital.model.document import Document
+from domain.vital.model.Document import Document
 
 class SqlAlchemyDocumentRepository:
     def add(self, doc: Document):
