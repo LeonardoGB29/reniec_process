@@ -8,5 +8,6 @@ class Observation:
         self.Port1 = None
 
     def getText(self, ):
+        # Método intencionalmente vacío. No se requiere lógica por ahora.
         pass
 

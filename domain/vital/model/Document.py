@@ -16,8 +16,10 @@ class Document(db.Model):
         self.status = None
 
     def change_status(self, new_status):
+        # Método intencionalmente vacío. No se requiere lógica por ahora.
         pass
 
     def is_active(self, ):
+        # Método intencionalmente vacío. No se requiere lógica por ahora.
         pass
 

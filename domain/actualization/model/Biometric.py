@@ -10,8 +10,10 @@ class Biometric:
         self.deviceId: String = None
 
     def isValid(): boolean(self, ):
+        # Método intencionalmente vacío. No se requiere lógica por ahora.
         pass
 
     def getBiometricHash(): String(self, ):
+        # Método intencionalmente vacío. No se requiere lógica por ahora.
         pass
 

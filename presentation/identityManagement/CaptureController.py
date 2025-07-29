@@ -6,8 +6,10 @@ class CaptureController:
         self.service = None
 
     def captureData(self, id):
+        # Método intencionalmente vacío. No se requiere lógica por ahora.
         pass
 
     def getCapturedData(self, id):
+        # Método intencionalmente vacío. No se requiere lógica por ahora.
         pass
 

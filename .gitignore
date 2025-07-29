@@ -25,3 +25,7 @@ instance/
 migrations/**/versions/*.pyc
 
 migrations
+
+#sonarqube
+sonar-project.properties
+.scannerwork/

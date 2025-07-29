@@ -7,5 +7,6 @@ class IdentityRequest:
         self.createdAt = None
 
     def getDni(self, ):
+        # Método intencionalmente vacío. No se requiere lógica por ahora.
         pass
 

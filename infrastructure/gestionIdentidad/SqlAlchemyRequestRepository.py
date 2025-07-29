@@ -5,14 +5,17 @@ from domain.identityManagement.repository.RequestRepository import RequestReposi
 
 class SqlAlchemyRequestRepository(RequestRepository):
     def __init__(self):
-        pass
+        super().__init__()
+        # Aquí podrías inicializar la conexión a la base de datos o cualquier otro recurso necesario
 
     def save(self, request):
+        # Implementación para guardar la solicitud en la base de datos
         pass
 
     def findById(self, requestId):
-        pass
+
 
     def updateStatus(self, requestId, status):
+        # Implementación para actualizar el estado de una solicitud por ID
         pass
 

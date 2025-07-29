@@ -8,8 +8,10 @@ class Record:
         self.comment = None
 
     def isSuccessful(self, ):
+        # Método intencionalmente vacío. No se requiere lógica por ahora.
         pass
 
     def getSummary(self, ):
+        # Método intencionalmente vacío. No se requiere lógica por ahora.
         pass
 

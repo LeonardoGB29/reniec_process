@@ -6,8 +6,10 @@ class CaptureServiceImpl:
         self.repo = None
 
     def capture(self, id):
+        # Método intencionalmente vacío. No se requiere lógica por ahora.
         pass
 
     def data(self, id):
+        # Método intencionalmente vacío. No se requiere lógica por ahora.
         pass
 

@@ -6,8 +6,10 @@ class DeliveryServiceImpl:
         self.repo = None
 
     def generate(self, id):
+        # Método intencionalmente vacío. No se requiere lógica por ahora.
         pass
 
     def deliver(self, id):
+        # Método intencionalmente vacío. No se requiere lógica por ahora.
         pass
 

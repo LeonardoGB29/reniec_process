@@ -6,8 +6,10 @@ class StatisticsServiceImpl:
         self.repo = None
 
     def validate(self, request):
+        # Método intencionalmente vacío. No se requiere lógica por ahora.
         pass
 
     def validate(self, request):
+        # Método intencionalmente vacío. No se requiere lógica por ahora.
         pass
 

@@ -8,8 +8,10 @@ class Observation:
         self.comment = None
 
     def summarize(self, ):
+        # Método intencionalmente vacío. No se requiere lógica por ahora.
         pass
 
     def isCritical(self, ):
+        # Método intencionalmente vacío. No se requiere lógica por ahora.
         pass
 

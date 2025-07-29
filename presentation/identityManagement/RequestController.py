@@ -6,8 +6,10 @@ class RequestController:
         self.service = None
 
     def createRequest(self, req):
+        # Método intencionalmente vacío. No se requiere lógica por ahora.
         pass
 
     def getRequestDetails(self, id):
+        # Método intencionalmente vacío. No se requiere lógica por ahora.
         pass
 

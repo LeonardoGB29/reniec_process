@@ -6,8 +6,10 @@ class RequestServiceImpl:
         self.repo = None
 
     def create(self, req):
+        # Método intencionalmente vacío. No se requiere lógica por ahora.
         pass
 
     def details(self, id):
+        # Método intencionalmente vacío. No se requiere lógica por ahora.
         pass
 

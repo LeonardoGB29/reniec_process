@@ -6,8 +6,10 @@ class NotificationController:
         self.service = None
 
     def sendObservation(self, id, obs):
+        # Método intencionalmente vacío. No se requiere lógica por ahora.
         pass
 
     def sendResult(self, id, status):
+        # Método intencionalmente vacío. No se requiere lógica por ahora.
         pass
 

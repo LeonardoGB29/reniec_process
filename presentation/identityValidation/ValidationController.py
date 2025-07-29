@@ -6,8 +6,10 @@ class ValidationController:
         self.service = None
 
     def validateStructure(self, id):
+        # Método intencionalmente vacío. No se requiere lógica por ahora.
         pass
 
     def validateBiometrics(self, id):
+        # Método intencionalmente vacío. No se requiere lógica por ahora.
         pass
 

@@ -3,11 +3,14 @@
 
 class SNDValidation:
     def __init__(self):
-        pass
+        self.repository = None
+        self.Attribute1 = None
 
     def validate(self, req):
+        # Método intencionalmente vacío. No se requiere lógica por ahora.
         pass
 
     def logRequest(self, dni):
+        # Método intencionalmente vacío. No se requiere lógica por ahora.
         pass
 

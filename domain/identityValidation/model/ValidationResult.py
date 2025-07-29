@@ -7,5 +7,6 @@ class ValidationResult:
         self.reason = None
 
     def isApproved(self, ):
+        # Método intencionalmente vacío. No se requiere lógica por ahora.
         pass
 
