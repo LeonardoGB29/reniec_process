@@ -1,18 +1,16 @@
-#!/usr/bin/python
-#-*- coding: utf-8 -*-
+from extensions import db
+from domain.vital.model.document import Document
 
-from domain.vital.DocumentRepository import DocumentRepository
+class SqlAlchemyDocumentRepository:
+    def add(self, doc: Document):
+        db.session.add(doc)
+        db.session.commit()
 
-class SqlAlchemyDocumentRepository(): #(DocumentRepository):
-    def __init__(self):
-        pass
+    def get_by_id(self, doc_id: int) -> Document | None:
+        return db.session.get(Document, doc_id)
 
-    def save(self, document):
-        pass
+    def list_all(self) -> list[Document]:
+        return Document.query.all()
 
-    def findById(self, documentId):
-        pass
-
-    def findByPersonId(self, personId):
-        pass
-
+    def update(self, doc: Document):
+        db.session.commit()

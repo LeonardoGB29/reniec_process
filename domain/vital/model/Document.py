@@ -3,6 +3,7 @@ from datetime import datetime
 
 class Document(db.Model):
     id = db.Column(db.Integer, primary_key=True)
+    number = db.Column(db.String(50), nullable=False)
     doc_type = db.Column(db.String(30), nullable=False)
     issued_at = db.Column(db.DateTime, default=datetime.utcnow)
     status = db.Column(db.String(20), default="PENDING")
