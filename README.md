@@ -2,7 +2,7 @@
 
 ## Sobre el Proyecto
 
-Bienvenido al repositorio de **reniec_process**, un proyecto innovador desarrollado para la gestión eficiente de procesos de registro de hechos vitales (nacimientos, matrimonios, defunciones) utilizando tecnologías modernas como Flask, Bonita BPM y principios de Domain-driven Design (DDD). Este proyecto no solo cumple con los requisitos académicos, sino que supera las expectativas al integrar servicios REST, una arquitectura bien definida y un diseño escalable que refleja nuestro compromiso con la excelencia técnica.
+Bienvenido al repositorio de **RENIEC Process 🚀**, un proyecto innovador desarrollado para la gestión eficiente de procesos de registro de hechos vitales (nacimientos, matrimonios, defunciones) utilizando tecnologías modernas como Flask, Bonita BPM y principios de Domain-driven Design (DDD). Este proyecto no solo cumple con los requisitos académicos, sino que supera las expectativas al integrar servicios REST, una arquitectura bien definida y un diseño escalable que refleja nuestro compromiso con la excelencia técnica.
 
 ### Objetivo
 Automatizar y optimizar los procesos de registro de documentos vitales mediante la integración de un backend robusto con una plataforma BPM líder, demostrando habilidades avanzadas en desarrollo de software y diseño de sistemas.
