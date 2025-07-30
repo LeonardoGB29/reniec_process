@@ -64,8 +64,10 @@ reniec_process/
 
 
 
-#pruebas
+# Pruebas
 
 <img width="2878" height="1558" alt="image" src="https://github.com/user-attachments/assets/65655c1d-d4fd-4ca9-aaa0-b51759be4fd1" />
 
 <img width="1802" height="606" alt="image" src="https://github.com/user-attachments/assets/0d81ce9c-0b21-4b52-b98f-da35880019be" />
+
+<img width="2159" height="1263" alt="image" src="https://github.com/user-attachments/assets/b9eca7dc-a0ad-4d78-844b-92a1bca1df49" />
