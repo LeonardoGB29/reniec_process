@@ -44,6 +44,30 @@ Además del proceso principal, el análisis BPMN incluyó también otros proceso
 
 ---
 
+
+## 📋 Organización de Tareas con Trello
+
+Durante el desarrollo del proyecto, utilizamos **Trello** como herramienta de gestión de tareas.
+
+El tablero contiene las siguientes columnas:
+
+- **Backlog**: Tareas por priorizar.
+- **To Do**: Tareas planificadas por iniciar.
+- **Doing**: Tareas en desarrollo.
+- **Testing**: Tareas en etapa de validación o revisión.
+- **Done ✅**: Tareas completadas, incluyendo microservicios y pruebas.
+
+### Actividades destacadas
+
+- Formularios de registro para **Nacimiento**, **Matrimonio**, y **Defunción**.
+- Implementación de **RabbitMQ** para comunicación entre servicios.
+- Análisis de código con **SonarQube**.
+- Desarrollo de **microservicios** para documentos y observaciones.
+- Modelado BPMN y validación funcional en Bonita.
+
+### 🔍 Vista del tablero:
+<img width="1916" height="952" alt="image" src="https://github.com/user-attachments/assets/bbeaebd9-ccba-4fd3-8b5b-1124e48d04fa" />
+
 ##  Iniciar el proyecto
 ## Iniciar proyecto ⚡ 
 
