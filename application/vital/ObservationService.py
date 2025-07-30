@@ -3,31 +3,43 @@ from extensions import db
 from domain.vital.model.VitalObservation import VitalObservation
 
 class ObservationService:
+    def __init__(self, repo=None):
+        self.repo = repo if repo else db  # Usa db.session si no hay repo definido
 
-    @staticmethod
-    def create_observation(data):
-        obs = VitalObservation(
-            title=data['title'],
-            description=data['description'],
-            document_id=data['document_id']
+    def create(self, document_id, title, description):
+        """Crea una nueva observación asociada a un documento."""
+        observation = VitalObservation(
+            title=title,
+            description=description,
+            document_id=document_id
         )
-        db.session.add(obs)
-        db.session.commit()
-        return obs
+        if self.repo == db:
+            db.session.add(observation)
+            db.session.commit()
+        else:
+            self.repo.add(observation)
+        return observation
 
-    @staticmethod
-    def get_observation_by_id(obs_id):
-        return VitalObservation.query.get(obs_id)
+    def get(self, observation_id):
+        """Obtiene una observación por su ID."""
+        if self.repo == db:
+            return db.session.get(VitalObservation, observation_id)
+        return self.repo.get_by_id(observation_id)
 
-    @staticmethod
-    def list_by_document_id(doc_id):
-        return VitalObservation.query.filter_by(document_id=doc_id).all()
+    def list_by_document_id(self, document_id):
+        """Lista todas las observaciones asociadas a un documento."""
+        if self.repo == db:
+            return db.session.query(VitalObservation).filter_by(document_id=document_id).all()
+        return self.repo.list_by_document_id(document_id)
 
-    @staticmethod
-    def associate_observation_to_document(obs_id, document_id):
-        obs = VitalObservation.query.get(obs_id)
+    def associate_to_document(self, observation_id, document_id):
+        """Asocia una observación a un documento."""
+        obs = self.get(observation_id)
         if not obs:
-            return None
+            raise ValueError("Observation not found")
         obs.document_id = document_id
-        db.session.commit()
+        if self.repo == db:
+            db.session.commit()
+        else:
+            self.repo.update(obs)
         return obs

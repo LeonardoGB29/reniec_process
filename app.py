@@ -1,7 +1,5 @@
 from flask import Flask
 from extensions import db, migrate
-#from controllers.document_controller import document_bp
-from domain.vital.model.VitalCase import VitalCase
 import os
 from dotenv import load_dotenv
 
@@ -16,21 +14,18 @@ app.config["SECRET_KEY"] = os.getenv("SECRET_KEY", "123456")
 db.init_app(app)
 migrate.init_app(app, db)
 
-from presentation.vital.document_controller import document_bp
+# Importa los modelos explícitamente para que Alembic los detecte
+from domain.vital.model.Document import Document
+from domain.vital.model.VitalCase import VitalCase
+
+# Registro de blueprints
+from presentation.vital.DocumentController import document_bp
 from presentation.vital.ObservationController import observation_bp
-
-#Esto es lo que le dice a Flask: escucha las rutas que empiecen con /register_vital.
-
-
 from presentation.vital.VitalCaseController import vital_case_bp
 
 app.register_blueprint(document_bp, url_prefix="/register_vital")
 app.register_blueprint(observation_bp, url_prefix="/register_vital")
-
-#Esto es lo que le dice a Flask: escucha las rutas que empiecen con /register_vital.
-
 app.register_blueprint(vital_case_bp, url_prefix="/register_vital")
-
 
 if __name__ == "__main__":
     app.run(debug=True)

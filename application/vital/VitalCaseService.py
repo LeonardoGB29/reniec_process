@@ -1,5 +1,6 @@
 ﻿from domain.vital.model.VitalCase import VitalCase
 from infrastructure.vital.SqlAlchemyVitalCaseRepository import SqlAlchemyVitalCaseRepository
+from extensions import db
 
 class VitalCaseService:
     def __init__(self):

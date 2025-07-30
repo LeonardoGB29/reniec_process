@@ -6,6 +6,12 @@ class DocumentService:
         self.repo = repo if repo else db  # Usa db.session si no hay repo definido
 
     def register(self, data):
+
+        print(f"Registering with data: {data}")  # Depuración
+        # Validación básica para doc_type
+        valid_doc_types = {"birth", "marriage", "death"}
+        if data["doc_type"].lower() not in valid_doc_types:
+            raise ValueError("doc_type must be 'birth', 'marriage', or 'death'")
         doc = Document(
             number=data["number"],
             doc_type=data["doc_type"],
@@ -34,6 +40,19 @@ class DocumentService:
         if not doc:
             raise ValueError("Document not found")
         doc.change_status(new_status.upper())
+        if self.repo == db:
+            db.session.commit()
+        else:
+            self.repo.update(doc)
+        return doc
+
+    def associate_to_person(self, doc_id, person_id):
+        doc = self.get(doc_id)
+        if not doc:
+            raise ValueError("Document not found")
+        if doc.person_id and doc.person_id != person_id:
+            raise ValueError("Document is already associated with another person")
+        doc.person_id = person_id
         if self.repo == db:
             db.session.commit()
         else:
