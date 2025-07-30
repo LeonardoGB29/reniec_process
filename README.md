@@ -226,4 +226,7 @@ En el modelado del proceso en Bonita BPM se utilizaron diversos **objetos de neg
 
 
 
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/03ded3ae-f563-4f94-9a88-e78a4e0c618c" />
+
+
 
