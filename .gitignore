@@ -29,3 +29,6 @@ migrations
 #sonarqube
 sonar-project.properties
 .scannerwork/
+
+.coverage
+coverage.xml

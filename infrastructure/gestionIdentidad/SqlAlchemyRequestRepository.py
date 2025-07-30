@@ -12,10 +12,11 @@ class SqlAlchemyRequestRepository(RequestRepository):
         # Implementación para guardar la solicitud en la base de datos
         pass
 
-    def findById(self, requestId):
+    def find_by_id(self, request_id):
+        # Implementación para buscar una solicitud por ID
+        pass
 
-
-    def updateStatus(self, requestId, status):
+    def update_status(self, request_id, status):
         # Implementación para actualizar el estado de una solicitud por ID
         pass
 

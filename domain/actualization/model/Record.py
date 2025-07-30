@@ -1,10 +1,12 @@
 #!/usr/bin/python
 #-*- coding: utf-8 -*-
 
+from typing import Optional
+
 class Record:
     def __init__(self):
         self.id = None
-        self.personId: String = None
+        self.person_id: Optional[str] = None
         self.comment = None
 
     def is_successful(self, ):

@@ -17,7 +17,6 @@ class Document(db.Model):
 
     def change_status(self, new_status):
         self.status = new_status.upper()
-        db.session.commit()
 
     def is_active(self):
         return self.status.upper() == "ACTIVE"
