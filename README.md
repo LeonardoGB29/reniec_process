@@ -103,6 +103,6 @@ Este proyecto es el resultado del trabajo en equipo y la dedicación para supera
 
 ## Agradecimientos
 
-Agradecemos a nuestro profesor por guiarnos en este desafío técnico y a xAI por su apoyo en la resolución de problemas. ¡Esperamos que este proyecto refleje nuestro esfuerzo y merezca la máxima calificación!
+Agradecemos a nuestro profesor por guiarnos en este desafío técnico por su apoyo en la resolución de problemas. Gracias a Valeria Ramirez por la revisiòn. ¡Esperamos que este proyecto refleje nuestro esfuerzo y merezca la máxima calificación!
 
 ---
