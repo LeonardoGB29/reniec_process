@@ -61,3 +61,11 @@ reniec_process/
 ├── migrations/
 └── instance/
 ```
+
+
+
+#pruebas
+
+<img width="2878" height="1558" alt="image" src="https://github.com/user-attachments/assets/65655c1d-d4fd-4ca9-aaa0-b51759be4fd1" />
+
+<img width="1802" height="606" alt="image" src="https://github.com/user-attachments/assets/0d81ce9c-0b21-4b52-b98f-da35880019be" />
