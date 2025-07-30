@@ -6,7 +6,7 @@ class ValidationResult:
         self.status = None
         self.reason = None
 
-    def isApproved(self, ):
+    def is_approved(self, ):
         # Método intencionalmente vacío. No se requiere lógica por ahora.
         pass
 

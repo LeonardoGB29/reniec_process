@@ -4,9 +4,9 @@
 class IdentityRequest:
     def __init__(self):
         self.dni = None
-        self.createdAt = None
+        self.created_at = None
 
-    def getDni(self, ):
+    def get_dni(self, ):
         # Método intencionalmente vacío. No se requiere lógica por ahora.
         pass
 

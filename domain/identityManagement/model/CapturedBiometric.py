@@ -6,7 +6,7 @@ class CapturedBiometric:
         self.type = None
         self.data = None
 
-    def isValid(self, ):
+    def is_valid(self, ):
         # Método intencionalmente vacío. No se requiere lógica por ahora.
         pass
 

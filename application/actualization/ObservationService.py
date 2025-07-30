@@ -3,5 +3,5 @@
 
 class ObservationService:
     def __init__(self):
-        self.observationRepository = None
+        self.observation_repository = None
 

@@ -6,6 +6,8 @@ from extensions import db
 
 class SqlAlchemyDocumentRepository:
     def __init__(self):
+        # Constructor intencionalmente vacío
+        # No se requiere lógica por ahora.
         pass
 
     def add(self, document):

@@ -5,10 +5,10 @@ class ValidationServiceImpl:
     def __init__(self):
         self.repo = None
 
-    def checkStructure(self, id):
+    def check_structure(self, id):
         # Método intencionalmente vacío. No se requiere lógica por ahora.
         pass
 
-    def checkBiometrics(self, id):
+    def check_biometrics(self, id):
         raise NotImplementedError("El método 'checkBiometrics' aún no está implementado.")
 

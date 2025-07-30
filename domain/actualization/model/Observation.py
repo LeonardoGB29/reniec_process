@@ -4,14 +4,14 @@
 class Observation:
     def __init__(self):
         self.id = None
-        self.relatedPersonId = None
+        self.related_person_id = None
         self.comment = None
 
-    def summarize(self, ):
+    def summarize(self):
         # Método intencionalmente vacío. No se requiere lógica por ahora.
         pass
 
-    def isCritical(self, ):
+    def is_critical(self, ):
         # Método intencionalmente vacío. No se requiere lógica por ahora.
         pass
 

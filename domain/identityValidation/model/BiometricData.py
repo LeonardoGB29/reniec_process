@@ -3,10 +3,10 @@
 
 class BiometricData:
     def __init__(self):
-        self.imageHash = None
-        self.captureTime = None
+        self.image_hash = None
+        self.capture_time = None
 
-    def isValid(self, ):
+    def is_valid(self, ):
         # Método intencionalmente vacío. No se requiere lógica por ahora.
         pass
 

@@ -4,13 +4,13 @@
 class GeneracionDNI:
     def __init__(self):
         self.repository = None
-        self.Attribute1 = None
+        self.attribute1 = None
 
     def generate(self, req):
         # Método intencionalmente vacío. No se requiere lógica por ahora.
         pass
 
-    def assignNumber(self, ):
+    def assign_number(self, ):
         # Método intencionalmente vacío. No se requiere lógica por ahora.
         pass
 

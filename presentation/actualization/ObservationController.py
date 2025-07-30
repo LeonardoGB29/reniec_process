@@ -6,11 +6,11 @@ class ObservationController:
         # Constructor intencionalmente vacío
         pass
 
-    def getObservations(self, personId):
+    def get_observations(self, person_id):
         # Método intencionalmente vacío. No se requiere lógica por ahora.
         pass
 
-    def addObservation(self, ):
+    def add_observation(self, ):
         # Método intencionalmente vacío. No se requiere lógica por ahora.
         pass
 
